@@ -1,0 +1,11 @@
+<section>
+  <h4 class="center">Angular-Graphql Example</h4>
+  <div *ngIf="loading else showData">
+    loading data
+  </div>
+  <ng-template #showData>
+    <div *ngFor="let country of countries">
+      <p>{{ country.name }}</p>
+    </div>
+  </ng-template>
+</section>
